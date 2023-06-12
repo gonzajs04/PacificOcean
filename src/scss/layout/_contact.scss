@@ -1,0 +1,240 @@
+@use '../base/mixins' as m;
+.contact{
+    background-color: white;
+    padding: 2rem 0;
+    overflow: hidden;
+    position: relative;
+}
+.contact h2{
+    font-size: 3rem;
+    color: var(--rosaFuerte);
+    text-align: center;
+}
+
+.form{
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    place-items: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
+
+
+
+     label{
+        display: block;
+        margin: .6rem 0;
+        color: black;
+    }
+
+     input[type="submit"]{
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: .5s all;
+        width: 220px;
+        font-size: 1rem;
+        background-color: var(--azul);
+        border: none;
+        &:hover{
+            background-color: var(--azul);
+            cursor: pointer;
+        }
+    }
+
+
+    sup{
+        color: red;
+    }
+
+
+     div{
+        width: 100%;
+    }
+    .container-subject{
+        grid-column: 1/3;
+    }
+    .container-msg{
+        grid-column: 1/3;
+    }
+    .container-msg textarea{
+        width: 100%;
+    }
+    
+    
+     input:not([type="submit"]){
+        width: 100%;
+        height: 46px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+     select{
+        width: 100%;
+        height: 46px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        padding: 0 1rem;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+     input:not([type="submit"]):hover{
+        background-color: #92aefa2d
+    }
+    
+    .container-submit{
+        grid-column: 1/3;
+        text-align: center;
+    }
+    
+    
+    
+    textarea{
+        font-size: 1rem;
+        padding: 1rem 1rem;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+        border: none;
+        outline: none;
+    
+    }
+}
+
+@media(min-width:1024px){
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 600px;
+    }
+
+}
+
+.container-msg-mail{
+    text-align: center;
+    padding: .5rem 0;
+    margin: 1rem auto;
+    max-width: 750px;
+    color: white;
+    font-weight: 700;
+
+}
+
+.error{
+    background-color: #ed1b2e;
+    border-radius: 50px;
+}
+
+
+/*SOCIAL MEDIA*/
+.social-form{
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(222,222,222,1);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(222,222,222,1);
+    box-shadow: 0px 0px 4px 0px rgba(222,222,222,1);
+    background-color: white;
+    padding: .5rem 0;
+    border-radius: 30px;
+    position: relative;
+    width: 100%;
+
+    display: none;
+    @include m.desktop{
+        display: block;
+        position: absolute;
+        width: 300px;
+        overflow: hidden;
+
+    }
+  
+
+
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+
+        justify-content: space-around;
+    }
+    svg{
+        width: 24px;
+        color: black;
+
+    }
+    &.instagram{
+        transform: none;
+
+        @include m.desktop{
+            transform: translateX(-60%);
+            transition: transform .5s ease-in-out;
+            &:hover{
+                transform: translateX(-10%);
+    
+            }
+        }
+        
+    }
+    &.facebook{
+        transform: none;
+        @include m.desktop{
+            transform: translateX(60%);
+            transition: transform .5s ease-in-out;
+    
+            right: 0;
+            &:hover{
+                transform: translateX(10%);
+    
+            }
+        }
+       
+    }
+    &.twitter{
+        transform: none;
+
+        @include m.desktop{
+            transform: translateX(-60%);
+            transition: transform .5s ease-in-out;
+            bottom: 50%;
+            &:hover{
+                transform: translateX(-10%);
+    
+            }
+        }
+       
+
+        
+    }
+    &.linkedin{
+    
+
+        transform: none;
+        @include m.desktop{
+            transform: translateX(60%);
+            transition: transform .5s ease-in-out;
+            bottom: 50%;
+
+            right: 0;
+            &:hover{
+                transform: translateX(10%);
+    
+            }
+        }
+
+    }
+}

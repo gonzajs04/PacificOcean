@@ -1,0 +1,81 @@
+@use '../base/mixins' as m;
+.labor{
+    margin-top: -10rem;
+    height: 100%;
+    position: relative;
+}
+.container-labor{
+    margin: 2rem 0;
+    position: absolute;
+    z-index: 10000;
+    height: 100%;  
+
+    width: 100%;
+
+   
+}
+.img-labor{
+  
+    background-image: url('laborimg.jpg');
+    height: 900px;
+    max-height: 1500px;
+    filter: brightness(.7);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.labor-text{
+    
+    h2{
+        font-size: 5rem;
+        color: var(--blanco);
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    p{
+        color: var(--blanco);
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.labor-text-card{
+    padding: 0 0rem;
+    margin: 0 auto;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    width: 100%;
+    @include m.desktopXL{
+        max-width: 1500px;
+    }
+
+}
+
+.info-labor{
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+
+.labor-delfin{
+    margin-top: 2rem;
+    transition: transform 1s ease-in-out;
+    width: 120px;
+    &:hover{
+        cursor: pointer;
+    }
+    &.clicked{
+        transform: translateX(-12rem) rotate(75deg);
+
+    }
+}

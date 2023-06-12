@@ -1,0 +1,130 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.footer{
+
+    background-color: var(--negro);
+    padding: 5rem 0;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 3rem;
+    row-gap: 3rem;
+
+    @include m.tablet{
+        grid-template-columns: repeat(2,1fr);
+     
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 0rem;
+
+    }
+    @include m.desktop{
+        grid-template-columns: repeat(4,1fr);
+        text-align: left;
+
+        
+    }
+
+
+    .donar-social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .social-media-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .container-social {
+
+                    width: 37px;
+                    height: 37px;
+                    svg{
+                        margin: 0 .3rem;
+                    }
+                  
+                
+            }
+           
+        }
+
+
+    }
+}
+
+
+.logo-footer{
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    h2{
+        margin: 0;
+        font-weight: 800;
+
+        font-size: 2.1rem;
+        color: var(--blanco);
+        span{
+            display: block;
+            font-size: 2.3rem;
+            line-height: .7em;
+        }
+    }
+    p{
+        max-width: 190px;
+        color: rgba(255, 255, 255, 0.836);
+        font-size: .8rem;
+        margin-left: .3rem;
+    }
+}
+
+.text-inicio-footer{
+    p{
+        color: white;
+        font-weight: 700;
+        margin: .5rem 0;
+    }
+    ul{
+        display: block;
+        padding: 0;
+        margin: 0;
+        li{
+            display: block;
+            margin: 0;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.849);
+        }
+    }
+
+}
+
+.consultas-footer{
+    p{
+        font-weight: 700;
+        margin: .5rem 0;
+        color: rgb(255, 255, 255);
+    }
+    ul{
+        display: block;
+        padding: 0;
+        margin: 0;
+        li{
+            display: block;
+            margin: 0;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.849);
+
+        }
+    }
+}
+
+

@@ -1,0 +1,3 @@
+
+const apiKey = e521e96cc2724f5ca4635818fa30b046;
+`https://newsapi.org/v2/everything?q=keyword&apiKey=${apiKey}`

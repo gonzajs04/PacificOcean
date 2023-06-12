@@ -1,0 +1,41 @@
+.card{
+    position: relative;
+    width: 0%;
+    opacity: 0;
+    background-color: rgba(230, 230, 230, 0.904);
+    padding: 2rem 3rem;
+    padding-bottom: 3rem;
+    transition: .6s all ease-in;
+    border-radius: 30px;
+    
+}
+
+.title-card h2{
+    color: var(--negro);
+    font-size: 2.5rem;
+}
+.text-card{
+    max-width: 600px;
+}
+.desc-card{
+    max-height: 100px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    p{
+        margin: 0;
+    }
+
+}
+.visible{
+    opacity: 1;
+    width: 100%;
+}
+.ver-mas{
+        text-transform: capitalize;
+        &:hover{
+            cursor: pointer;
+        }
+}
+.full-vermas{
+    max-height: 500px;
+}

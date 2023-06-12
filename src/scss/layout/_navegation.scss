@@ -1,0 +1,103 @@
+@use "../base/mixins" as m;
+@use '../base/variables' as v;
+.containerg-navegation {
+  position: absolute;
+  z-index: 10000000;
+}
+.containerg-navegation {
+  height: 100%;
+
+  @include m.tablet {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+.nav {
+  padding: 1.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 99999999;
+  width: 100%;
+  li {
+    z-index: 10000;
+    
+    position: relative;
+    color: rgba(255, 255, 255, 0.884);
+
+    a {
+      transition: all .2s ease-in-out;
+
+      height: 100%;
+    }
+  }
+  li:hover a {
+    color: #1882da;
+    animation: animate 2s linear infinite;
+  }
+}
+
+// @keyframes animate {
+//   0% {
+//     clip-path: polygon(
+//       0 68%,
+//       12% 73%,
+//       28% 75%,
+//       49% 80%,
+//       65% 81%,
+//       79% 77%,
+//       90% 75%,
+//       100% 71%,
+//       100% 100%,
+//       0% 99%
+//     );
+//   }
+//   50% {
+//     clip-path: polygon(
+//       0 32%,
+//       15% 44%,
+//       35% 49%,
+//       57% 54%,
+//       78% 55%,
+//       98% 50%,
+//       100% 47%,
+//       100% 44%,
+//       100% 100%,
+//       0% 99%
+//     );
+//   }
+//   100% {
+//     clip-path: polygon(
+//       0 68%,
+//       92% 73%,
+//       98% 75%,
+//       49% 80%,
+//       65% 81%,
+//       79% 77%,
+//       90% 75%,
+//       100% 71%,
+//       100% 100%,
+//       0% 99%
+//     );
+//   }
+// }
+
+.container-navegation {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+
+  li {
+    list-style: none;
+    margin: 0 0.5rem;
+    color: white;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
