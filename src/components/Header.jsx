@@ -1,7 +1,6 @@
 import Navegation from "./Navegation";
 import header_img from "/header_img2.jpg"
-export default function Header({ setShowHeader, showHeader }) {
-    setShowHeader(true);
+export default function Header() {
     return (
         <header className="header">
             <div className="containerg-header-img">
@@ -18,7 +17,7 @@ export default function Header({ setShowHeader, showHeader }) {
                     </div>
 
                 </div>
-                {showHeader && (
+           
 
                     <div className="container-img-header">
                         <picture><img src={header_img} alt="" loading="lazy" /></picture>
@@ -26,7 +25,7 @@ export default function Header({ setShowHeader, showHeader }) {
 
 
 
-                )}
+       
 
 
             </div>

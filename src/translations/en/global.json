@@ -1,0 +1,65 @@
+{
+    "nav": {
+        "home" : "Home",
+        "about" : "About us",
+        "job" : "Our job",
+        "news" : "Last news",
+        "help" : "How to help",
+        "donate" : "Donate now"
+
+    },
+
+    "aboutus" :{
+        "abouttitle" : "About us",
+        "abouttext": "Discover our organization: protecting the oceans and its inhabitants since 2000! In a world where marine life faces numerous threats, our organization has been working hard since October 6, 2000 to protect and preserve the animals of the ocean. We are proud to be a voice for those wonderful beings who cannot speak for themselves. Our main mission is to prevent indiscriminate hunting and protect endangered marine species. We care deeply about the conservation and sustainability of the oceans, recognizing that they are essential for the balance of our planet and for the well-being of future generations. Our founder, Gonzalo Hernández, a passionate conservationist from Argentina, has been a fundamental pillar in the establishment and growth of our organization. His tireless dedication and deep love for the oceans have been the inspiration behind our efforts to protect marine animals. Over the years, we have carried out numerous projects and campaigns to raise awareness of the importance of marine conservation. We work collaboratively with scientists, marine life experts, and other like-minded organizations to conduct research, conduct rescues, and advocate for policies that protect animals and their habitats. On our website, you will find detailed information about our activities, achievements and ways to get involved. We invite you to join our cause, whether it be through donations, volunteering, or simply spreading our message. Together, we can make a difference and ensure a safer, more prosperous future for ocean animals. Thank you for your support and for joining our fight to protect marine animals!"
+    },
+
+    "ourjob": {
+        "jobtitle":"Our job",
+        "jobsubtitle":"Child safety through protection and inclusion",
+        "jobcardtitle":"Protecting animals together!",
+        "jobcardtext":"In our organization, we are dedicated to preserving and caring for animals in all their forms. We fight against poaching, promote responsible adoption and work on the conservation of endangered species. Join us in this noble cause to create a world where animals are treated with love and respect. Explore our page and join our mission to protect animals!",
+        "jobcardmore":"More",
+        "jobcardless":"Less"
+    },
+
+    "news": {
+        "newstitle": "Last News"
+    },
+    "help":{
+        "helptitle": "Act, be helper",
+        "helptext": "Animals need you, participate, raise your hand and help those who need you most. Become a volunteer or a donor and give each animal a fairer chance at life."
+    },
+
+
+
+    "donate": {
+        "basic" : "Basic",
+        "difund" : {"title" : "Difund", "difunddesc" : "Share in your social media"},
+
+        "premium" : "Premium",
+        "btndonate" : "Donate",
+        "btndifund" : "Share"
+    },
+
+    "contact":{
+
+            "title" : "Contact",
+            "name" : "First name",
+            "subject" : "Subject",
+            "msg" : "Your message"
+           
+
+    },
+
+    "submit":{
+        "btnsubmit":"Submit"
+    },
+
+
+    "footer":{
+        "slogan": "Be a better person",
+        "help": {"title":"Need help", "element1":"Help","element2":"How to donate", "element3":"Contact", "element4" : "Report scam or abuse"}
+    }
+
+}

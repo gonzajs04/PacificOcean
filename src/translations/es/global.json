@@ -1,0 +1,61 @@
+{
+    "nav": {
+        "home" : "Inicio",
+        "about" : "Sobre nosotros",
+        "job" : "Nuestra labor",
+        "news" : "Utilmas noticias",
+        "help" : "Como ayudar",
+        "donate" : "Dona ahora"
+
+    }   ,
+
+    "aboutus" :{
+        "abouttitle" : "Sobre Nosotros",
+        "abouttext": "Descubre nuestra organización: ¡protegiendo los océanos y sus habitantes desde el año 2000! En un mundo donde la vida marina enfrenta numerosas amenazas, nuestra organización ha estado trabajando arduamente desde el 6 de octubre de 2000 para proteger y preservar los animales del océano. Estamos orgullosos de ser la voz de esos seres maravillosos que no pueden hablar por sí mismos. Nuestra principal misión es prevenir la caza indiscriminada y proteger las especies marinas en peligro de extinción. Nos preocupamos profundamente por la conservación y sostenibilidad de los océanos, reconociendo que son esenciales para el equilibrio de nuestro planeta y para el bienestar de las generaciones futuras. Nuestro fundador, Gonzalo Hernández, un apasionado conservacionista de Argentina, ha sido un pilar fundamental en el establecimiento y crecimiento de nuestra organización. Su incansable dedicación y profundo amor por los océanos han sido la inspiración detrás de nuestros esfuerzos para proteger a los animales marinos. A lo largo de los años, hemos llevado a cabo numerosos proyectos y campañas para concienciar sobre la importancia de la conservación marina. Trabajamos en colaboración con científicos, expertos en vida marina y otras organizaciones afines para realizar investigaciones, realizar rescates y abogar por políticas que protejan a los animales y sus hábitats. En nuestro sitio web, encontrará información detallada sobre nuestras actividades, logros y formas de involucrarse. Te invitamos a unirte a nuestra causa, ya sea a través de donaciones, voluntariado o simplemente difundiendo nuestro mensaje. Juntos, podemos marcar la diferencia y garantizar un futuro más seguro y próspero para los animales del océano. ¡Gracias por su apoyo y por unirse a nuestra lucha para proteger a los animales marinos!"
+    },
+    "ourjob": {
+        "jobtitle":"Nuestra labor",
+        "jobsubtitle":"Seguridad de la infancia a través de la protección y la inclusión",
+        "jobcardtitle":"¡Protegiendo a los animales juntos!",
+        "jobcardtext":"En nuestra organización, nos dedicamos a preservar y cuidar a los animales en todas sus formas. Luchamos contra la caza furtiva, promovemos la adopción responsable y trabajamos en la conservación de especies en peligro. Únete a nosotros en esta noble causa para crear un mundo donde los animales sean tratados con amor y respeto. ¡Explora nuestra página y únete a nuestra misión de proteger a los animales!",
+        "jobcardmore":"Ver mas",
+        "jobcardless":"Ver menos"
+    },
+    "news": {
+        "newstitle": "Ultimas noticias"
+    },
+    "help":{
+        "helptitle": "Actua",
+        "helptext": "Los animales te necesitan, participa, alza tu mano y ayuda a quienes mas te necesitan. Hazte voluntario o donante y otorga a cada animal una oportunidad de vida mas justa."
+    },
+
+    "donate": {
+        "basic" : "Basico",
+        "difund" : {"title" : "Difundir", "difunddesc" : "Difunde en tus redes sociales"},
+            
+      
+        "premium" : "Premium",
+
+        "btndonate" : "Donar",
+        "btndifund" : "Difundir"
+
+    },
+
+   
+    "contact":{
+
+        "title" : "Contactanos",
+        "name" : "Primer nombre",
+        "subject" : "Tema",
+        "msg" : "Coloca tu mensaje"
+       
+
+},
+"submit":{
+    "btnsubmit":"Enviar"
+},
+"footer":{
+    "slogan": "Se una mejor persona",
+    "help": {"title":"Necesito ayuda", "element1":"Ayuda","element2":"Como donar", "element3":"Contacto", "element4" : "Denunciar estafa o abuso"}
+}
+}

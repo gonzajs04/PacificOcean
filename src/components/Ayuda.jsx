@@ -1,6 +1,8 @@
 import {Link} from  'react-scroll'; 
+import {useTranslation} from 'react-i18next';
 
 export default function Ayuda(){
+    const[t] = useTranslation("global")
     return(
     
         <section className="ayuda">
@@ -11,12 +13,12 @@ export default function Ayuda(){
                     </div>
 
                     <div className="container-ayuda-text">
-                        <h2>Actúa</h2>
+                        <h2>{t("help.helptitle")}</h2>
                         <div className="ayuda-desc">
-                            <p>Los animales te necesitan, participa, alza tu mano y ayuda a quienes mas te necesitan. Hazte voluntario o donante y otorga a cada animal una oportunidad de vida mas justa</p>
+                            <p>{t("help.helptext")}</p>
                         </div>
                         <div className="ayuda-donar">
-                            <p> <Link activeClass="active" to="donar" spy={true} smooth={true} offset={50} duration={500}>Dona ahora</Link></p>
+                            <p> <Link activeClass="active" to="donar" spy={true} smooth={true} offset={50} duration={500}>{t("donate.btndonate")}</Link></p>
                         </div>
                     </div>
 

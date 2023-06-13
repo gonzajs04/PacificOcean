@@ -4,7 +4,6 @@
     height: 100%;
     padding: 4rem 0 9rem 0rem;
     background-color: var(--blanco);
-    overflow: hidden;
 
    
 }
@@ -23,8 +22,8 @@
 }
 .noticias-donar{
     position: relative;
-    overflow:hidden;
-    max-height: 700px;
+    overflow-y: scroll;
+    max-height: 500px;
 
     a{
         text-decoration: none;

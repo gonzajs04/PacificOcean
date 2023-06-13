@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
+import {useTranslation} from 'react-i18next'
 
 export default function Card({ title, desc,visibleCard }) {
 
     const [animar,setAnimar] = useState(false)
-    const [verMas,setVerMas] = useState(false)
+    const [verMas,setVerMas] = useState(false);
+    const[t,i18n ] = useTranslation("global");
 
     function handleAnimar(){
         if(visibleCard){
@@ -34,7 +36,7 @@ export default function Card({ title, desc,visibleCard }) {
                         <p>{desc}</p>
                     </div>
 
-                    <p className="ver-mas" onClick={handleVerMas}>{verMas ? 'ver menos' : 'ver mas'}</p>
+                    <p className="ver-mas" onClick={handleVerMas}>{verMas ? t("ourjob.jobcardless") : t("ourjob.jobcardmore")}</p>
                 </div>
 
             </div>

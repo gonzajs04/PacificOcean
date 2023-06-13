@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import delfin from '../../public/delfin.png'
 import Card from './Card';
+import {useTranslation} from 'react-i18next';
 export default function Labor({visibleCard,setVisibleCard}) {
 
-    const [isClicked,setIsClicked] = useState(false)
+    const [isClicked,setIsClicked] = useState(false);
+    const [t,i18n] = useTranslation("global") //NOMBRE DEL FICHERO DE TRADUCCIONES
 
 
     return (
@@ -13,8 +15,8 @@ export default function Labor({visibleCard,setVisibleCard}) {
                 <div className="container-labor">
                     <div className="labor-text-card">
                         <div className="labor-text">
-                            <h2>Nuestra labor</h2>
-                            <p>Seguridad de la infancia a través de la protección y la inclusión
+                            <h2>{t("ourjob.jobtitle")}</h2>
+                            <p>{t("ourjob.jobsubtitle")}
                             </p>
 
                         </div>
@@ -27,9 +29,8 @@ export default function Labor({visibleCard,setVisibleCard}) {
 
                             {visibleCard ? (
                                 <Card 
-                                    title="¡Protegiendo a los animales juntos!"
-                                    desc="En nuestra organización, nos dedicamos a preservar y cuidar a los animales en todas sus formas. Luchamos contra la caza furtiva, promovemos la adopción responsable y trabajamos en la conservación de especies en peligro. Únete a nosotros en esta noble causa para crear un mundo donde los animales sean tratados con amor y respeto. ¡Explora nuestra página y únete a nuestra misión de proteger a los animales!
-                                    "
+                                    title={t("ourjob.jobcardtitle")}
+                                    desc={t("ourjob.jobcardtext")}
                                     visibleCard={visibleCard}
                                 />) : ''
                             }

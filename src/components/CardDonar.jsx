@@ -1,18 +1,21 @@
 import { useState } from "react"
+import {useTranslation} from 'react-i18next';
 
-export default function CardDonar({ data}) {
+export default function CardDonar({data}) {
+    const[t] = useTranslation("global")
+
 
     const [activeElement, setActiveElement] = useState(false);
-    const [tocoOtro,setTocoOtro] = useState(false)
+    // const [tocoOtro,setTocoOtro] = useState(false)
 
     const economics=[
-        {key:1, label: `$${data.minCash}`},
-        {key:2,label: `$${data.maxCash/2}`},
-        {key:3,label: `$${data.maxCash}`}
+        {id:1, label: `$${data.minCash}`},
+        {id:2,label: `$${data.maxCash/2}`},
+        {id:3,label: `$${data.maxCash}`}
     ]
 
-    function handleClickEconomy(key){
-        setActiveElement(key === activeElement ? null : key)
+    function handleClickEconomy(id){
+        setActiveElement(id === activeElement ? null : id)
 
     }
 
@@ -39,7 +42,7 @@ export default function CardDonar({ data}) {
 
                             {data.type!="Difund" ? economics.map(economy =>(
                                 
-                                <p className={activeElement === economy.key ? 'marcar' : ''} onClick={()=>{handleClickEconomy(economy.key)}}>{economy.label} </p>
+                                <p key={economy.id} className={activeElement === economy.id ? 'marcar' : ''} onClick={()=>{handleClickEconomy(economy.id)}}>{economy.label} </p>
                             )) : (
                                 <p>{data.url}</p>
                             )}
@@ -48,16 +51,12 @@ export default function CardDonar({ data}) {
                         </div>
 
 
-                         
-
-
-
                         <div className="container-btn-donate">
                             {data.type!="Difund" ? (
-                                  <input type="submit" value="Donar" />
+                                  <input type="submit" value={t("donate.btndonate")} />
                             ):
                             (
-                                <a href="">Difundir</a>
+                                <a href="">{t("donate.btndifund")}</a>
                             )
                             }
                           
