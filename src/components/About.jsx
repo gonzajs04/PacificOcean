@@ -32,7 +32,7 @@ export default function About() {
                     <div className="container-pez">
                         <picture>
 
-                            <source srcSet={pezw} type="image/webp" />
+                            <source srcSet={pezw} type="image/webp" alt="imagen pez" />
                             <img src={pez} loading="lazy" alt="imagen pez" />
 
                         </picture>
