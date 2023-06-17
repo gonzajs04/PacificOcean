@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import '../build/styles.min.css';
+import './scss/_index.scss';
+
 import {I18nextProvider} from "react-i18next"; //IMPORTO COMPONENTE PARA ENVOLVER MI APP EN SISTEMA DE TRADUCCIONES
 import i18next from 'i18next'; //IMPORTO PARA INIZIALIZAR SISTEMA DE TRADUCCIONES
 import global_es from './translations/es/global.json'; //IMPORTo PAQUETES DE TRADUCCIONES PARA ESPECIFICARLAS EN LOS RESOURCES DE I18NEXT

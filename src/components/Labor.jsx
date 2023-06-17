@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import delfin from '../../public/delfin.png'
 import { useTranslation } from 'react-i18next';
 import Card from '../components/Card'
-export default function Labor({imagePaths }) {
+import delfinw from '../imagenes/compressed/delfinw.webp'
+import delfin from '../imagenes/delfin.png'
+
+
+export default function Labor() {
 
 
 const [visibleCard, setVisibleCard] = useState(false);
@@ -41,7 +44,7 @@ const [visibleCard, setVisibleCard] = useState(false);
                             <div className={`labor-delfin ${isClicked ? 'clicked' : ''}`} onClick={handleCard}>
                                 <picture>
 
-                                    <source srcSet={`${imagePaths.compressedPath}/delfin.webp`} type='image/webp'  loading="lazy"/>
+                                    <source srcSet={delfinw} type='image/webp'  loading="lazy"/>
                                     <img src={delfin} alt="imagen desplegable delfin loadi" loading='lazy' />
 
                                 </picture>

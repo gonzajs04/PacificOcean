@@ -1,7 +1,12 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next";
+import pez from '../imagenes/compressed/pezw.webp';
+import pezw from '../imagenes/pez.png'
 
-export default function About({imagePaths}) {
+import aboutimgw from '../imagenes/compressed/aboutimgw.webp' ;
+import aboutimg from '../imagenes/aboutimg.jpg';
+
+export default function About() {
     const[t] = useTranslation("global") //ESPECIFICO NOMBRE DEL FICHERO
     const [isVer,setIsVer] = useState(false)
     function handleVerMas(e){
@@ -27,16 +32,16 @@ export default function About({imagePaths}) {
                     <div className="container-pez">
                         <picture>
 
-                            <source srcSet={`${imagePaths.compressedPath}/pez.webp`} type="image/webp" />
-                            <img src={`${imagePaths.simplePath}/pez.png`} loading="lazy" alt="imagen pez" />
+                            <source srcSet={pezw} type="image/webp" />
+                            <img src={pez} loading="lazy" alt="imagen pez" />
 
                         </picture>
                     </div>
 
                     <div className="img-about">
                             <picture>
-                                    <source srcSet={`${imagePaths.compressedPath}/aboutimg.webp`}/>
-                                    <img src={`${imagePaths.simplePath}/aboutimg.jpg`} alt="imagen about" />
+                                    <source srcSet={aboutimgw} type="image/webp"/>
+                                    <img src={aboutimg} loading="lazy" />
                             </picture>
                     </div>
 

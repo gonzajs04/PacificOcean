@@ -9,7 +9,7 @@ const Ayuda = lazy(() => import('./components/Ayuda')); //IMPORTAR COMPONENTE CO
 const Donar = lazy(() => import('./components/Donar')); //IMPORTAR COMPONENTE CON LAZY LOAD
 const Contact = lazy(() => import('./components/Contact')); //IMPORTAR COMPONENTE CON LAZY LOAD
 const Footer = lazy(() => import('./components/Footer')); //IMPORTAR COMPONENTE CON LAZY LOAD
-import '../build/styles.min.css';
+import './scss/_index.scss';
 
 // import Noticias from './components/Noticias';
 // import Ayuda from './components/Ayuda';
@@ -22,10 +22,7 @@ import '../build/styles.min.css';
 /*APRENDER GULP PARA MIMIFICAR IMAGENMES, ARCHIVOS ETC...*/
 
 function App() {
-  const imagePaths = {
-    simplePath: "./public",
-    compressedPath: "./public/compressed",
-  }
+
   const apiKey = "e521e96cc2724f5ca4635818fa30b046";
   const [dataNews, setDataNews] = useState({});
   const [dataPersons, setDataPersons] = useState([])
@@ -52,18 +49,18 @@ function App() {
 
   return (
 
-    <Suspense fallback={<Carga imagePaths={imagePaths}/>} > {/*SUSPENSE ES UN COMPONENTE DE REACT, QUE APARECE, SOLAMENTE CUANDO LA PAGINA NO CARGO COMPLETAMENTE, SE DEBE MEZCLAR CON LAZY LOADING */}
+    <Suspense fallback={<Carga />} > {/*SUSPENSE ES UN COMPONENTE DE REACT, QUE APARECE, SOLAMENTE CUANDO LA PAGINA NO CARGO COMPLETAMENTE, SE DEBE MEZCLAR CON LAZY LOADING */}
       
       <Header />
 
       <Separator 
   
-        imagePaths={imagePaths}
+       
       />
 
       <Labor
       
-        imagePaths={imagePaths}
+    
       />
 {/* 
       <Noticias
@@ -73,7 +70,7 @@ function App() {
       <Ayuda />
 
       <Donar 
-        imagePaths={imagePaths}
+   
       />
 
       <Contact

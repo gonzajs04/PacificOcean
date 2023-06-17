@@ -1,6 +1,5 @@
-import { lazy } from 'react'
  import About from './About'
-export default function Separator({imagePaths}) {
+export default function Separator() {
     return(
 
         <section className="c-skewed">
@@ -8,7 +7,7 @@ export default function Separator({imagePaths}) {
          <div className="skewed">
  
             <About
-                imagePaths={imagePaths}
+          
             />
                
          </div>
