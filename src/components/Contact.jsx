@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react"
-import { regexMail } from '../helpers/helpers.js';
-import { generateRandomKey } from '../helpers/helpers.js';
+import { useState } from "react"
+import { regexMail } from '../../build/app.js';
+import { generateRandomKey } from '../../build/app.js';
 import {useTranslation} from 'react-i18next';
 import Mensaje from './Mensaje.jsx'
 

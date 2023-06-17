@@ -9,19 +9,17 @@
     }
     height: 300px;
     position: relative;
-    background-image: url('aboutimg.jpg');
-    background-size: cover;
-    background-position:center;
-
-    background-attachment: fixed;
     border-radius: 50%;
 
 }
 .c-skewed{
+    position: relative;
+    z-index: 9;
     height: 1500px;
 
     @include m.tablet{
-        height: 1000px;
+        height: 1200px;
+        padding: 4rem 0;
 
     }
 
@@ -46,7 +44,12 @@
    
   }
 .about-text{
-    width: 80%;
+    width:100%;
+
+    @include m.tablet{
+        width: 80%;
+
+    }
     overflow: hidden;
     text-align: center;
   
@@ -71,6 +74,7 @@
             height: auto;
             
         }
+       
         
     }
 
@@ -90,20 +94,28 @@
 
 .about-desc.mh100 {
     overflow: visible;
-    max-height: 1000px;
+    max-height: 2000px;
     height: auto;
+    @media(min-width:"290px"){
+        max-height: 1100px;
+
+    }
   }
 
 .container-about{
-    padding: 0 3rem;
+    padding: 0 1rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     height: 100%;
+   
 
     @include m.tablet{
+        padding: 0 3rem;
+
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
@@ -196,4 +208,8 @@
     @include m.desktop{
         display: none;
     }
+}
+
+.img-about{
+    height: 100%;
 }

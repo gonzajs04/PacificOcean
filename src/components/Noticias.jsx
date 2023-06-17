@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function Noticias({ dataNews }) {
     const [t] = useTranslation("global");
@@ -33,22 +32,25 @@ export default function Noticias({ dataNews }) {
                 <div className={`noticias-donar `}
                 > {/* */}
 
-                    {Object.keys(dataNews).length > 0 && dataNews.map((data, i) => (
+                    {/* {Object.keys(dataNews).length > 0 && dataNews.map((data, i) => (
 
 
-                        <div className="card-noticia" key={i}>
-                            <a href={data.url}>
-                                <div className="noticia-img">
-                                    <picture><img src={data.urlToImage} alt="imagen noticia" loading="lazy" /></picture>
-                                </div>
-                                <div className="titulo-noticia">
-                                    <h2>{data.title}</h2>
-                                </div>
-                            </a>
-                        </div>
+                         i<= 10 && (
+                            <div className="card-noticia" key={i}>
+                                <a href={data.url}>
+                                    <div className="noticia-img">
+                                        <picture><img src={data.urlToImage} alt="imagen noticia" loading="lazy" /></picture>
+                                    </div>
+                                    <div className="titulo-noticia">
+                                        <h2>{data.title}</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        )
+                       
 
 
-                    ))}
+                    ))} */}
 
 
                 </div>

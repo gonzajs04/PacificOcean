@@ -5,9 +5,10 @@ export default function Card({ title, desc,visibleCard }) {
 
     const [animar,setAnimar] = useState(false)
     const [verMas,setVerMas] = useState(false);
-    const[t,i18n ] = useTranslation("global");
+    const[t ] = useTranslation("global");
 
     function handleAnimar(){
+    
         if(visibleCard){
             setTimeout(()=>{
                 setAnimar(true)
@@ -19,11 +20,13 @@ export default function Card({ title, desc,visibleCard }) {
     }
 
     function handleVerMas(e){
+        e.preventDefault()
         verMas ? setVerMas(false) : setVerMas(true);
     }
     useEffect(()=>{
             handleAnimar()
     },[visibleCard])
+    
     return (
         <>
 

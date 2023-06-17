@@ -8,6 +8,7 @@
   position: relative;
   z-index: 10000;
   height: 100%;
+
 }
 .containerg-header {
   width: 100%;
@@ -31,29 +32,48 @@
   }
 
   h1 {
-    font-size: 7rem;
+    font-size: 3rem;
 
     padding: 0;
     text-align: center;
     color: var(--blanco);
     text-transform: uppercase;
     @include m.tablet {
+      font-size: 7.5rem;
+      margin-left: .7rem;
+    }
+    @include m.desktop{
       font-size: 10rem;
+
     }
   }
   span:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 2px #0575a5;
+    font-size: 3.3rem;
+    @include m.tablet{
+      font-size: 7.7rem;
+
+    }
+    @include m.desktop{
+      font-size: 10.1rem;
+
+    }
   }
   span:nth-child(2) {
     text-align: center;
     color: white;
     -webkit-text-stroke: 2px #0575a5;
-    font-size: 7.9rem;
+    font-size: 3.5rem;
 
     @include m.tablet {
-      font-size: 10.5rem;
+      font-size: 7.9rem;
       margin-right: 1.5rem;
+    }
+
+    @include m.desktop{
+      font-size: 10.5rem;
+
     }
   }
 }
@@ -63,3 +83,21 @@
   height: 950px;
 }
 
+
+.menu
+{
+  z-index: 9999999999999999999999;
+  position: fixed;
+  width: 24px;
+  display: block;
+  left: 1%;
+  top: 1%;
+  &:hover{
+    cursor: pointer;
+  }
+
+  @include m.tablet{
+    display: none;
+    
+  }
+}

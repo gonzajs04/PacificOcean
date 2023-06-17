@@ -26,7 +26,12 @@ export default function CardDonar({data}) {
             <div className="card-donar">
 
                 <div className="donar-img">
-                    <picture><img src={data.img} alt="imagen data" loading="lazy" /></picture>
+                    
+                    <picture>
+                        <source srcSet={data.compressedImage} type="image/webp" />
+                        <img src={data.img} alt="imagen data" loading="lazy" />
+                        
+                        </picture>
 
                 </div>
                 <div className="donar-text">
@@ -44,7 +49,7 @@ export default function CardDonar({data}) {
                                 
                                 <p key={economy.id} className={activeElement === economy.id ? 'marcar' : ''} onClick={()=>{handleClickEconomy(economy.id)}}>{economy.label} </p>
                             )) : (
-                                <p>{data.url}</p>
+                                <p className="difund-url">{data.url}</p>
                             )}
 
 

@@ -1,4 +1,4 @@
-
+@use '../base/mixins' as m;
 body{
     background-color: var(--negro);
     font-family: 'Poppins',sans-serif;
@@ -24,6 +24,25 @@ img{
     position: relative;
 
 }
+
+.disnone{
+    transition: width .3s ease-in-out;
+    visibility: hidden;
+    width: 0%;
+    @include m.tablet{
+        visibility: visible;
+        width: 100%;
+    }
+}
+.disvisible{
+
+visibility: visible;   
+z-index: 999999;
+width: 100%;
+
+
+}
+
 @keyframes burbujas {
     0%{
         transform: translateY(0%);
