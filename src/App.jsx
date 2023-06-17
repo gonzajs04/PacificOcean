@@ -65,10 +65,10 @@ function App() {
       
         imagePaths={imagePaths}
       />
-
+{/* 
       <Noticias
         dataNews={dataNews}
-      />
+      /> */}
 
       <Ayuda />
 
