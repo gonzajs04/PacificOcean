@@ -1,8 +1,8 @@
 @use "../base/mixins" as m;
 .container-ayuda-img {
-  background-image: url('../../../public/turtle-donate.jpg');
+  background-image: url('/turtle-donate.jpg');
 
-  background-image: url('../../../public/turtle-donatew.webp');
+  background-image: url('/turtle-donatew.webp');
 
   background-position: initial;
   background-size: cover;
