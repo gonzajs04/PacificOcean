@@ -41,7 +41,7 @@ export default function About() {
                     <div className="img-about">
                             <picture>
                                     <source srcSet={aboutimgw} type="image/webp"/>
-                                    <img src={aboutimg} loading="lazy" />
+                                    <img src={aboutimg} loading="lazy" alt="imagen about"/>
                             </picture>
                     </div>
 
