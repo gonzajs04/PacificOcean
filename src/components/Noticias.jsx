@@ -32,10 +32,10 @@ export default function Noticias({ dataNews }) {
                 <div className={`noticias-donar `}
                 > {/* */}
 
-                    {/* {Object.keys(dataNews).length > 0 && dataNews.map((data, i) => (
+                    {Object.keys(dataNews).length > 0 && dataNews.map((data, i) => (
 
 
-                         i<= 10 && (
+                         i<= 9 && (
                             <div className="card-noticia" key={i}>
                                 <a href={data.url}>
                                     <div className="noticia-img">
@@ -50,7 +50,7 @@ export default function Noticias({ dataNews }) {
                        
 
 
-                    ))} */}
+                    ))}
 
 
                 </div>
