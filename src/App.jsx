@@ -62,10 +62,10 @@ function App() {
       
     
       />
-{/* 
+{
       <Noticias
         dataNews={dataNews}
-      /> */}
+      /> }
 
       <Ayuda />
 
