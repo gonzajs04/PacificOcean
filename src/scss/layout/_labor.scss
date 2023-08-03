@@ -16,19 +16,10 @@
    
 }
 .img-labor{
-
-
-    background-image: url('/laborimg.jpg');
-
-    background-image: url('/laborimgw.webp');
-
-
     height: 1000px;
     max-height: 1500px;
     filter: brightness(.7);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+
 
     @include m.tablet{
         max-height: 1500px;

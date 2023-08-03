@@ -1,12 +1,6 @@
 @use "../base/mixins" as m;
 .container-ayuda-img {
-  background-image: url('/turtle-donate.jpg');
-
-  background-image: url('/turtle-donatew.webp');
-
-  background-position: initial;
-  background-size: cover;
-  background-attachment: fixed;
+ 
   height: 400px;
 
   @include m.tablet {
@@ -50,11 +44,11 @@
     max-width: 400px;
     text-align: center;
     p {
-      margin: 1.5rem 0;
+      margin: 2rem 0;
       color: white;
-      font-size: 1rem;
+      font-size: .8rem;
       margin: .5rem;
-
+      line-height: 1.5rem;
       @include m.tablet{
         font-size: 1.2rem;
         margin: .5rem;

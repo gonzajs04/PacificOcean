@@ -1,10 +1,10 @@
 import { useEffect, useState, lazy } from 'react' //IMPORTO LAZY
 import { Suspense } from 'react'; //IMPORTO SUSPENSE PARA EJECUTAR COMPONENTE DE CARGA
-import Carga from './components/Carga'
+// import Carga from './components/Carga'
 import Header from './components/Header'
 import Labor from './components/Labor'
 const Separator = lazy(() => import('./components/Separator'))//IMPORTAR COMPONENTE CON LAZY LOAD
-const Noticias = lazy(() => import('./components/Noticias')); //IMPORTAR COMPONENTE CON LAZY LOAD
+// const Noticias = lazy(() => import('./components/Noticias')); //IMPORTAR COMPONENTE CON LAZY LOAD
 const Ayuda = lazy(() => import('./components/Ayuda')); //IMPORTAR COMPONENTE CON LAZY LOAD
 const Donar = lazy(() => import('./components/Donar')); //IMPORTAR COMPONENTE CON LAZY LOAD
 const Contact = lazy(() => import('./components/Contact')); //IMPORTAR COMPONENTE CON LAZY LOAD
@@ -23,34 +23,33 @@ import './scss/_index.scss';
 
 function App() {
 
-  const apiKey = "e521e96cc2724f5ca4635818fa30b046";
-  const [dataNews, setDataNews] = useState({});
-  const [dataPersons, setDataPersons] = useState([])
+  // const apiKey = "e521e96cc2724f5ca4635818fa30b046";
+  // const [dataNews, setDataNews] = useState({});
+  // const [dataPersons, setDataPersons] = useState([])
 
 
 
-  useEffect(() => {
-    fetchApi();
+  // useEffect(() => {
+  //   // fetchApi();
 
-  }, [])
+  // }, [])
 
-  async function fetchApi() {
+  // async function fetchApi() {
     
-    try {
-      const response = await fetch(`https://newsapi.org/v2/everything?q=keyword&apiKey=${apiKey}`);
-      const data = await response.json();
-      setDataNews(data.articles);
-    }
-    catch (err) {
-      console.log(err);
-    }
-  }
+  //   try {
+  //     const response = await fetch(`https://newsapi.org/v2/everything?q=keyword&apiKey=${apiKey}`);
+  //     const data = await response.json();
+  //     setDataNews(data.articles);
+  //   }
+  //   catch (err) {
+  //     console.log(err);
+  //   }
+  // }
 
 
   return (
 
-    <Suspense fallback={<Carga />} > {/*SUSPENSE ES UN COMPONENTE DE REACT, QUE APARECE, SOLAMENTE CUANDO LA PAGINA NO CARGO COMPLETAMENTE, SE DEBE MEZCLAR CON LAZY LOADING */}
-      
+    <>
       <Header />
 
       <Separator 
@@ -62,10 +61,10 @@ function App() {
       
     
       />
-{
+{/* {
       <Noticias
-        dataNews={dataNews}
-      /> }
+        // dataNews={dataNews}
+      /> } */}
 
       <Ayuda />
 
@@ -74,14 +73,14 @@ function App() {
       />
 
       <Contact
-        dataPersons={dataPersons}
-        setDataPersons={setDataPersons}
+        // dataPersons={dataPersons}
+        // setDataPersons={setDataPersons}
       />
 
 
       <Footer />
 
-    </Suspense>
+ </>
 
   )
 

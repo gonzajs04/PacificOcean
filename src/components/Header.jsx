@@ -1,10 +1,10 @@
-import { lazy, useState} from "react";
+import {  useState} from "react";
 import menu from '../imagenes/menu.png'
 import header_img2w from '../imagenes/compressed/header_img2w.webp'
 import header_img2 from '../imagenes/header_img2.jpg'
 // import Navegation from "./Navegation";
 
-const Navegation = lazy(()=> import('./Navegation')) //IMPORTAR COMPONENTE CON LAZY LOAD
+import Navegation from './Navegation'
 
 
 export default function Header() {

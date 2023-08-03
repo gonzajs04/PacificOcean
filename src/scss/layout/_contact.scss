@@ -75,9 +75,10 @@
     }
     .container-msg{
         padding: 0 1rem;
+        width: 227px;
         @include m.tablet{
             padding: 0 0rem;
-
+            width: auto;
         }
         grid-column: 1/3;
     }

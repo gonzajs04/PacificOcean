@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState,lazy } from 'react'
 import { useTranslation } from 'react-i18next';
 import Card from '../components/Card'
 import delfinw from '../imagenes/compressed/delfinw.webp'
 import delfin from '../imagenes/delfin.png'
-
+import laborimg from '../imagenes/laborimg.jpg'
+import laborimgw from '../imagenes/compressed/laborimgw.webp'
 
 export default function Labor() {
 
@@ -64,7 +65,8 @@ const [visibleCard, setVisibleCard] = useState(false);
 
                 </div>
                 <div className="img-labor">
-
+                    <source srcSet={laborimgw} type='image/webp' />
+                    <img src={laborimg} alt="Imagen labor" />
 
                 </div>
 

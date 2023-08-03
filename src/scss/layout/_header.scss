@@ -86,12 +86,13 @@
 
 .menu
 {
-  z-index: 9999999999999999999999;
+  z-index: 10000000000;
   position: fixed;
   width: 24px;
   display: block;
-  left: 1%;
-  top: 1%;
+  left: 3%;
+  top: 3%;
+  filter: drop-shadow(0 0 6px black);
   &:hover{
     cursor: pointer;
   }
