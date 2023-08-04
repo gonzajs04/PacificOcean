@@ -3,9 +3,6 @@ export function regexMail(email){
     const isValidEmail = emailRegex.test(email);
     return isValidEmail;
 
-
-
-
 }
 
 
